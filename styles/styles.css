@@ -31,16 +31,19 @@
   }
 
   .button {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
+    text-decoration: none;
     text-align: center;
     text-transform: uppercase;
+    color: #444444;
     background-color: #FFE17F;
   }
 
   /* Шапка */
+
   .page-header {
     background-color: #FFE17F;
   }
@@ -65,7 +68,7 @@
   }
 
   .navigation-link {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -73,4 +76,55 @@
     color: inherit;
     text-decoration: none;
   }
+
+  /* Лучшие предложения */
+
+  .number {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 30px;
+    align-items: center;
+    text-align: right;
+    color: #FFE17F;/* цвет потом поменяю, а то его не видно */
+  }
+
+  .top-item-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .specifications-value {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 30px;
+  }
+
+  .specifications-name {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  /* Категории товаров */
+
+  .product-categories-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #444444;
+    text-decoration: none;
+  }
+
+  .glasses {
+    background-color: #FFE17F;
+    background-image: url("./images/icons_main/glasses");
+    background-position: center center;
+    background-repeat: no-repeat;
+    Width: 160px;
+    Height: 160px;
+  }
+
 
