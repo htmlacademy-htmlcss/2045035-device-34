@@ -68,8 +68,6 @@
   .navigation-user-link {
     font-family: inherit;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
     align-items: center;
     color: inherit;
     text-decoration: none;
@@ -119,15 +117,37 @@
     text-decoration: none;
   }
 
-  .glasses {
+  .product-categories-icon {
     background-color: #FFE17F;
-    background-image: url("./images/icons_main/glasses.svg");
     background-position: center center;
     background-repeat: no-repeat;
     Width: 160px;
     Height: 160px;
   }
-  /* остальные категории не стала прописывать, не понимаю в чем ошибка */
+
+  .glasses {
+    background-image: url("../images/icons_main/glasses.svg");
+  }
+  
+  .monopod {
+    background-image: url("../images/icons_main/monopod.svg");
+  }
+
+  .camera {
+    background-image: url("../images/icons_main/camera.svg");
+  }
+
+  .fitnes-braslet {
+    background-image: url("../images/icons_main/fitnes_braslet.svg");
+  }
+
+  .watch {
+    background-image: url("../images/icons_main/watch.svg");
+  }
+
+  .quadcopter {
+    background-image: url("../images/icons_main/quadcopter.svg");
+  }
 
   /* Доставка, гарантия, кредит */
 
