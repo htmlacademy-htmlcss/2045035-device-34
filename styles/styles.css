@@ -25,5 +25,283 @@
   body {
     font-family: "Rubik", sans-serif;
     font-size: 18px;
-    line-height: 30px;  
+    line-height: 30px;
+    color: #444444;
+    background: #FFFFFF;  
   }
+
+  .button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #444444;
+    background-color: #FFE17F;
+  }
+
+  .text-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  /* Шапка */
+
+  .page-header {
+    background-color: #FFE17F;
+  }
+
+  .search-site {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    color: inherit;
+  }
+
+  .navigation-user-link {
+    font-family: inherit;
+    font-weight: 400;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .navigation-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Лучшие предложения */
+
+  .number {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 30px;
+    align-items: center;
+    text-align: right;
+    color: #FFE17F;/* цвет потом поменяю, а то его не видно */
+  }
+
+  .specifications-value {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 30px;
+  }
+
+  .specifications-name {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  /* Категории товаров */
+
+  .product-categories-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #444444;
+    text-decoration: none;
+  }
+
+  .product-categories-icon {
+    background-color: #FFE17F;
+    background-position: center center;
+    background-repeat: no-repeat;
+    Width: 160px;
+    Height: 160px;
+  }
+
+  .glasses {
+    background-image: url("../images/icons_main/glasses.svg");
+  }
+  
+  .monopod {
+    background-image: url("../images/icons_main/monopod.svg");
+  }
+
+  .camera {
+    background-image: url("../images/icons_main/camera.svg");
+  }
+
+  .fitnes-braslet {
+    background-image: url("../images/icons_main/fitnes_braslet.svg");
+  }
+
+  .watch {
+    background-image: url("../images/icons_main/watch.svg");
+  }
+
+  .quadcopter {
+    background-image: url("../images/icons_main/quadcopter.svg");
+  }
+
+  /* Доставка, гарантия, кредит */
+
+  .advantages {
+    background-color: #F0F0F0;
+  }
+
+  /* Доставка под заказ */
+
+  .button-delivery {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    color: black;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #F0F0F0;
+  }
+
+  /* о нас, контакты */
+
+  .delivery-company-item {
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .text-small-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  /* Подпишитесь на расылку */
+
+  .newsletter {
+    background-color: #F0F0F0;
+  }
+
+  /* Подвал */
+
+  .page-footer {
+    background-color: #444444;
+  }
+
+  .about-text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+
+  .footer-navigation-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;   
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  /* Страница каталога */
+
+  /* Хлебные крошки */
+
+  .breadcrumbs-link {
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .catalog-page {
+    background-color: #F0F0F0;
+  }
+
+  /* Фильтры вроде сказали пока не трогать */
+
+  /* Сортировка */
+
+  .select-control-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  /* Список товаров */
+
+  .product {
+    background-color: #FFFFFF;
+  }
+
+  .product-card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;   
+    color: #000000;
+  }
+
+  .product-card-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;  
+    color: #000000;
+  }
+
+  .product-card-link {
+    text-decoration: none;
+  }
+
+  /* загрузить вперед назад */
+
+  .pagination-show-more {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    border: 3px solid #E5E5E5 ;
+  }
+
+  .pagination {
+    background-color: #EBEBEB;
+  }
+
+  .pagination-button {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .pagination-link {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #444444;
+  }
+
+
