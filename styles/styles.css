@@ -162,7 +162,16 @@ body {
 
 .product-categories-list {
   display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
 }
+
+.product-categories-item {
+  margin: 0;
+  padding: 0;
+}
+/* вот тут не понимаю, всё чтоможно обнулила, но отступы м/у иконками всё равно не равномерные */
 
 .product-categories-link {
   font-family: 'Raleway', sans-serif;
@@ -219,6 +228,10 @@ body {
 
 .advantages-list {
   width: 280px;
+}
+
+.product-categories-title {
+  margin: 0;
 }
 
 /* Доставка под заказ */
@@ -318,9 +331,16 @@ body {
   color: #FFFFFF;
 }
 
+
+
 /* Страница каталога */
 
 /* Хлебные крошки */
+
+.inner-header {
+  width: 1160px;
+  margin: 0 auto;
+}
 
 .breadcrumbs-link {
   font-size: 16px;
@@ -333,9 +353,22 @@ body {
   background-color: #F0F0F0;
 }
 
-/* Фильтры вроде сказали пока не трогать */
+.catalog-content {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.filter {
+  width: 200px;
+  margin: 0 60px;
+}
 
 /* Сортировка */
+
+.select-control {
+  display: flex;
+}
 
 .select-control-title {
   font-family: 'Raleway', sans-serif;
@@ -349,6 +382,8 @@ body {
 /* Список товаров */
 
 .product {
+  display: flex;
+  flex-direction: column;
   background-color: #FFFFFF;
 }
 
