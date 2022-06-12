@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
     <!-- шапка -->
     <header class="page-header">
       <a class="navigation-logo" href="index.html">
-        <img class="logo" src="images/logo.svg"  width="145" height="36" alt="Логотип магазина электроники Девайс.">
+        <img class="logo" src="images/logo.svg" width="145" height="36" alt="Логотип магазина электроники Девайс.">
       </a>
-      <!-- Поиск по сайту --> 
+      <!-- Поиск по сайту -->
       <nav class="navigation">
         <form class="search-site">
           <input type="search" placeholder="Текст поиска">
           <input type="submit" value="Найти">
         </form>
-        <!-- Навигация пользователя    -->    
+        <!-- Навигация пользователя    -->
         <ul class="navigation-user">
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">Коля Петухов</a>
-          </li> 
+          </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">Выйти</a>
-          </li>  
+          </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">Сравнить</a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Корзина</a> 
-          </li>                      
-        </ul> 
-        <!-- Навигация по сайту -->     
+            <a class="navigation-user-link" href="#">Корзина</a>
+          </li>
+        </ul>
+        <!-- Навигация по сайту -->
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Каталог товаров</a>
@@ -46,12 +48,12 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">Контакты</a>
           </li>
-        </ul>       
-      </nav>    
+        </ul>
+      </nav>
     </header>
-    
+
     <main class="main-inner">
-     <!-- Хлебные крошки -->   
+      <!-- Хлебные крошки -->
       <header class="inner-header">
         <h1 class="text-title">Моноподы для селфи</h1>
         <ol class="breadcrumbs">
@@ -66,8 +68,8 @@
           </li>
         </ol>
       </header>
-      <!-- Фильтры --> 
-      <section class="catalog-page">   
+      <!-- Фильтры -->
+      <section class="catalog-page">
         <div class="filter">
           <h2 class="visually-hidden">Фильтры</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -76,27 +78,27 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="black" checked> Чёрный                      
+                    <input class="control-input" type="checkbox" name="black" checked> Чёрный
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="white" checked> Белый                      
+                    <input class="control-input" type="checkbox" name="white" checked> Белый
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="blue"> Синий                      
+                    <input class="control-input" type="checkbox" name="blue"> Синий
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="red"> Красный                      
+                    <input class="control-input" type="checkbox" name="red"> Красный
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="pink"> Розовый                      
+                    <input class="control-input" type="checkbox" name="pink"> Розовый
                   </label>
                 </li>
               </ul>
@@ -118,21 +120,21 @@
             </fieldset>
             <button class="button" type="submit">Показать</button>
           </form>
-        </div>  
-        <!-- Сортировка --> 
+        </div>
+        <!-- Сортировка -->
         <div class="select-control">
           <h2 class="select-control-title">Сортировка:</h2>
           <select class="select-control-list" aria-label="Сортировка">
             <option value="popular">Популярные</option>
-          </select>        
-          <a class="button-select" href="#" >
+          </select>
+          <a class="button-select" href="#">
             <span class="visually-hidden">Стрелка вверх</span>
           </a>
           <a class="button-select" href="#">
             <span class="visually-hidden">Стрелка вниз</span>
           </a>
         </div>
-        <!-- Список товаров --> 
+        <!-- Список товаров -->
         <div class="product">
           <h2 class="visually-hidden">Список товаров</h2>
           <ul class="product-list">
@@ -140,32 +142,32 @@
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/catalog/product-2.jpg" alt="Любительская селфи-палка">
                 <h3 class="product-card-title">Любительская селфи-палка</h3>
-                <b class="product-card-price">500 ₽</b>              
-              </a>   
+                <b class="product-card-price">500 ₽</b>
+              </a>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/catalog/product-2-1.jpg" alt="Профессиональная селфи-палка">
                 <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                 <b class="product-card-price">1500 ₽</b>
-              </a>   
+              </a>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/catalog/product-2-2.jpg" alt="Непотопляемая селфи-палк">
                 <h3 class="product-card-title">Непотопляемая селфи-палк</h3>
                 <b class="product-card-price">2500 ₽</b>
-              </a>   
+              </a>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/catalog/product-2-3.jpg" alt="Селфи-палка «Следуй за мной»">
                 <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                 <b class="product-card-price">1500 ₽</b>
-              </a>   
+              </a>
             </li>
           </ul>
-          <!-- Кнопки --> 
+          <!-- Кнопки -->
           <button class="pagination-show-more" type="button">Загрузить ещё</button>
           <ul class="pagination">
             <li class="pagination-item">
@@ -191,15 +193,16 @@
             </li>
           </ul>
         </div>
-      </section>        
+      </section>
     </main>
 
     <footer class="page-footer">
       <section class="footer-address">
         <h2 class="visually-hidden">Адрес</h2>
-        <img class="footer-logo" src="images/icons_footer/logo_yelowe.svg"  width="145" height="36" alt="Логотип магазина электроники Девайс.">
+        <img class="footer-logo" src="images/icons_footer/logo_yelowe.svg" width="145" height="36"
+          alt="Логотип магазина электроники Девайс.">
         <p class="about-text">Санкт-Петербург, набережная
-        реки Карповки, 5, литера П.</p>  
+          реки Карповки, 5, литера П.</p>
       </section>
       <section class="footer-navigation">
         <h2 class="visually-hidden">Навигация</h2>
@@ -237,8 +240,8 @@
       </section>
       <section>
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="about-text">Тел.: +7 (812) 812-12-12</p> 
-        <img class="html-logo" src="images/icons_footer/logo_html.svg"  width="115" height="33" alt="Логотип академии.">        
+        <p class="about-text">Тел.: +7 (812) 812-12-12</p>
+        <img class="html-logo" src="images/icons_footer/logo_html.svg" width="115" height="33" alt="Логотип академии.">
       </section>
-    </footer>      
+    </footer>
   </body>
