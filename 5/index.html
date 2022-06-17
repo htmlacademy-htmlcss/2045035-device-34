@@ -11,25 +11,27 @@
   <body>
     <!-- шапка -->
     <header class="page-header wrapper">
-      <img class="logo" src="images/logo.svg" width="145" height="36" alt="Логотип магазина электроники Девайс.">
       <nav class="navigation">
+        <img class="logo" src="images/logo.svg" width="145" height="36" alt="Логотип магазина электроники Девайс.">
         <!-- Навигация пользователя    -->
         <!-- Поиск по сайту -->
-        <form class="search-site">
-          <input type="search" placeholder="Текст поиска">
-          <input type="submit" value="Найти">
-        </form>
-        <ul class="navigation-user">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Войти</a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Корзина</a>
-          </li>
-        </ul>
+        <div class="navigation-search-user">
+          <form class="search-site">
+            <input type="search" placeholder="Текст поиска">
+            <input type="submit" value="Найти">
+          </form>
+          <ul class="navigation-user">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Войти</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
         <!-- Навигация по сайту -->
         <ul class="navigation-site">
           <li class="navigation-site-item">
@@ -146,7 +148,7 @@
         </ul>
       </section>
       <!-- Доставка, гарантия, кредит -->
-      <h2 class="visually-hidden wrapper" >Преимущества</h2>
+      <h2 class="visually-hidden wrapper">Преимущества</h2>
       <section class="advantages">
         <div class="advantages-content wrapper">
           <ul class="advantages-list">
