@@ -172,17 +172,17 @@ body {
 }
 
 .slider-number {
-  margin: 0;
+  position: absolute;
   margin-top: 29px;
-  margin-right: 49px;
+  margin-left: 261px;
   font-family: 'Rubik';
   font-weight: 700;
   font-size: 180px;
-  line-height: 30px;
+  line-height: 129px;
   align-items: center;
   text-align: right;
   color: #FFFFFF;
-  }
+}
 
 .specifications-value {
   font-weight: 400;
@@ -199,19 +199,23 @@ body {
 
 .product-categories-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
 }
 
 .product-categories-item {
   display: flex;
-  flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  margin-right: 40px;
   width: 160px;
+
 }
 
+.product-categories-item:nth-child(6n) {
+  margin-right: 0;
+}
 
 .product-categories-link {
   font-family: 'Raleway', sans-serif;
