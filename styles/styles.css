@@ -58,6 +58,8 @@ body {
 }
 
 .text-title {
+  margin: 0;
+  padding: 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -173,6 +175,7 @@ body {
 
 .top-item {
   margin-top: -150px;
+  margin-bottom: 70px;
 }
 
 .slider {
@@ -193,7 +196,7 @@ body {
 .slider-number {
   position: absolute;
   margin-top: 29px;
-  margin-left: 261px;
+  margin-left: 301px;
   font-family: 'Rubik';
   font-weight: 700;
   font-size: 180px;
@@ -203,10 +206,44 @@ body {
   color: #FFFFFF;
 }
 
+.slider-title {
+  z-index: 2;
+  margin-top: 121px;
+  margin-bottom: 21px;
+}
+
+.slider-text {
+  margin-bottom: 51px;
+}
+
+.button-pagination {
+  display: flex;
+  margin-bottom: 49px;
+}
+
+.slider-pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  list-style-type: none;
+}
+
+.specifications-list {
+  display: flex;
+}
+
+.specifications-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
 .specifications-value {
   font-weight: 400;
   font-size: 36px;
   line-height: 30px;
+  margin-bottom: 12px;
 }
 
 .specifications-name {
@@ -217,11 +254,13 @@ body {
 /* Категории товаров */
 
 .product-categories-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  gap: 40px;
   margin: 0;
+  margin-bottom: 70px;
   padding: 0;
-}
+  }
 
 .product-categories-item {
   display: flex;
@@ -229,10 +268,6 @@ body {
   margin-right: 40px;
   width: 160px;
 
-}
-
-.product-categories-item:nth-child(6n) {
-  margin-right: 0;
 }
 
 .product-categories-link {
@@ -244,12 +279,15 @@ body {
   text-decoration: none;
 }
 
+.product-categories-item {
+  display: flex;
+}
+
 .product-categories-icon {
   background-color: #FFE17F;
-  background-position: center center;
-  background-repeat: no-repeat;
   Width: 160px;
   Height: 160px;
+  margin-bottom: 33px;
 }
 
 .glasses {
@@ -287,11 +325,27 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 280px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages-item:not(:last-child) {
+  margin-bottom: 35px;
 }
 
 .product-categories-title {
   margin: 0;
+}
+
+.advantages-description {
+  padding-top: 72px;
+  padding-right: 72px;
+  padding-left: 63px;
 }
 
 /* Доставка под заказ */
