@@ -102,6 +102,9 @@ body {
 }
 
 .search-site {
+  display: grid;
+  grid-template-columns: 359px 160px;
+  grid-template-rows: 40px;
   width: 517px;
   height: 40px;
   margin-right: 26px;
@@ -115,7 +118,9 @@ body {
 }
 
 .navigation-user,
-.navigation-site {
+.navigation-site,
+.navigation-site-list,
+.navigation-catalog {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -128,7 +133,7 @@ body {
 }
 
 .navigation-user-link {
-  display: block;
+  display: flex;
   padding-bottom: 10px;
   font-family: inherit;
   font-weight: 400;
@@ -137,10 +142,16 @@ body {
   text-decoration: none;
 }
 
+.enter {
+  margin-right: 176px;
+}
+
+.compare {
+  margin-right: 36px;
+}
+
 .navigation-site-link {
-  display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  display: flex;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -148,6 +159,14 @@ body {
   text-transform: uppercase;
   color: inherit;
   text-decoration: none;
+}
+
+.navigation-catalog {
+  margin-right: auto;
+}
+
+.navigation-site-item {
+  margin-left: 45px;
 }
 
 /* Лучшие предложения */
@@ -200,7 +219,6 @@ body {
 .product-categories-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   margin: 0;
   padding: 0;
 }
