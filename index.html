@@ -34,9 +34,9 @@
         <!-- Навигация по сайту -->
         <div class="navigation-site">
           <div class="navigation-catalog">
-            <a class="navigation-site-link" href="catalog.html">Каталог товаров</a>
-            <button class="catalog" type="button">
-              <span class="visually-hidden">Раскрыть каталог</span>
+            <button>
+              Каталог товаров
+              <span></span>
             </button>
           </div>
           <ul class="navigation-site-list">
@@ -123,7 +123,7 @@
             </a>
           </li>
           <li class="product-categories-item">
-            <a class="product-categories-link" href="#">
+            <a class="product-categories-link" href="catalog.html">
               <div class="product-categories-icon monopod"></div>
               <h3 class="product-categories-title">Моноподы для селфи</h3>
             </a>
@@ -182,12 +182,14 @@
       <section class="delivery-under-the-order wrapper">
         <a class="button-delivery" href="#">Доставим редкий товар под заказ</a>
       </section>
+
       <!-- О нас, контакты -->
       <div class="company-content wrapper">
         <section class="about-company">
-          <h2 class="text-title">О нас</h2>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.<br>
-            Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+          <h2 class="text-title company-content-title">О нас</h2>
+          <p class="content-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="content-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
+            компаниями:</p>
           <ul class="delivery-company-list">
             <li class="delivery-company-item">Меловые линии</li>
             <li class="delivery-company-item">Сдик</li>
@@ -196,29 +198,35 @@
           <a class="button" href="#">Подробнее о нас</a>
         </section>
         <section class="contacts">
-          <h2 class="text-title">Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить работоспособность покупки.</p>
+          <h2 class="text-title company-content-title">Контакты</h2>
+          <p class="content-text">Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить
+            работоспособность покупки.</p>
           <h3 class="text-small-title">Интернет-магазин «Девайс»</h3>
-          <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <p>+7 (812) 812-12-12</p>
+          <p class="content-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>
+            +7 (812) 812-12-12</p>
           <h3 class="text-small-title">Время работы</h3>
-          <p>пн—пт: с 10:00 до 22:00</p>
-          <p>сб—вс: с 10:00 до 19:00</p>
+          <p class="content-text">пн—пт: с 10:00 до 22:00<br>
+            сб—вс: с 10:00 до 19:00</p>
           <a class="button" href="#">Напишите нам</a>
         </section>
       </div>
+
       <!-- Подпишитесь на расылку -->
       <section class="newsletter">
         <div class="newsletter-contenet wrapper">
-          <h2 class="text-title">Подпишитесь<br>на рассылку</h2>
-          <p>Еженедельный дайджест с обзорами новинок,<br>
-            длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required>
-            <button class="newsletter-button" type="submit">Подписаться</button>
-          </form>
-          <p>Это бесплатно</p>
+          <div class="mail-info">
+            <h2 class="text-title">Подпишитесь<br>на рассылку</h2>
+            <p>Еженедельный дайджест с обзорами новинок,<br>
+              длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
+          </div>
+          <div class="mail-content">
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+                required>
+              <button class="newsletter-button" type="submit">Подписаться</button>
+            </form>
+            <p class="it-for-free">Это бесплатно</p>
+          </div>
         </div>
       </section>
     </main>

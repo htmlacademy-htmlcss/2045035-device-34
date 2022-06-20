@@ -231,6 +231,7 @@ body {
 
 .specifications-list {
   display: flex;
+  padding: 0;
 }
 
 .specifications-item {
@@ -260,7 +261,7 @@ body {
   margin: 0;
   margin-bottom: 70px;
   padding: 0;
-  }
+}
 
 .product-categories-item {
   display: flex;
@@ -318,6 +319,7 @@ body {
 
 .advantages {
   background-color: #F0F0F0;
+  margin-bottom: 70px;
 }
 
 .advantages-content {
@@ -352,9 +354,12 @@ body {
 
 .delivery-under-the-order {
   display: flex;
+  margin-bottom: 70px;
 }
 
 .button-delivery {
+  width: 1160px;
+  padding: 40px 125px;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -371,6 +376,17 @@ body {
 
 .company-content {
   display: flex;
+  padding-top: 47px;
+  margin-bottom: 70px;
+}
+
+.company-content-title {
+  margin-bottom: 48px;
+}
+
+.content-text {
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .about-company {
@@ -378,12 +394,23 @@ body {
   margin-right: 108px;
 }
 
+.delivery-company-list {
+  margin: 0;
+}
+
 .delivery-company-item {
   font-weight: 700;
   line-height: 20px;
+  margin-bottom: 19px;
+}
+
+.delivery-company-item:last-child {
+  margin-bottom: 30px;
 }
 
 .text-small-title {
+  margin: 0;
+  margin-bottom: 15px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -393,8 +420,28 @@ body {
 
 .newsletter {
   background-color: #F0F0F0;
+  padding-top: 64px;
 }
 
+.mail-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 0;
+  margin-bottom: 144px;
+}
+
+.mail-content {
+  display: flex;
+}
+
+.newsletter-form {
+  width: 810px;
+}
+
+.it-for-free {
+  margin-left: auto;
+}
 /* Подвал */
 
 .page-footer {
