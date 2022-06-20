@@ -90,6 +90,13 @@ body {
   margin-top: 40px;
 }
 
+.page-header-catalog {
+  background-color: #FFE17F;
+  min-height: 186px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
 .navigation {
   display: flex;
   flex-direction: column;
@@ -149,11 +156,11 @@ body {
 }
 
 .enter {
-  margin-right: 176px;
+  margin-right: 230px;
 }
 
 .compare {
-  margin-right: 36px;
+  margin-right: 26px;
 }
 
 .navigation-site-link {
@@ -472,7 +479,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  }
+}
 
 .footer-navigation-social {
   display: flex;
@@ -540,11 +547,26 @@ body {
 
 /* Хлебные крошки */
 
+.text-title-catalog {
+  margin-left: 60px;
+  margin-bottom: 16px;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  margin-left: 60px;
+  margin-bottom: 35px;
+  padding: 0;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
   color: #000000;
+  margin-right: 36px;
 }
 
 .catalog-page {
@@ -560,6 +582,12 @@ body {
   margin: 0 60px;
 }
 
+/* Основная площадь каталога */
+
+.catalog-main {
+  width: 840px;
+}
+
 /* Сортировка */
 
 .select-control {
@@ -573,6 +601,21 @@ body {
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin: 25px 40px;
+}
+
+.select-control-list {
+  margin-left: 166px;
+}
+
+.select-control-list {
+  border: 0;
+  background-color: #F0F0F0;
+}
+
+.button-select {
+  width: 10px;
+  margin-left: auto;
 }
 
 /* Список товаров */
@@ -581,14 +624,30 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #FFFFFF;
+  padding-top: 70px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px 40px;
+  width: 760px;
+  list-style-type: none;
+}
+
+.product-name-price {
+  display: flex;
 }
 
 .product-card-title {
+  width: 226px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
+  margin: 0;
+  margin-top: 32px;
 }
 
 .product-card-price {
@@ -597,15 +656,23 @@ body {
   line-height: 21px;
   text-align: right;
   color: #000000;
+  margin: 0;
+  margin-top: 32px;
+  margin-left: auto;
 }
 
 .product-card-link {
   text-decoration: none;
 }
 
-/* загрузить вперед назад */
+
+/* загрузить ещё */
 
 .pagination-show-more {
+  display: block;
+  width: 760px;
+  height: 55px;
+  margin: 44px 40px;
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 16px;
@@ -618,11 +685,20 @@ body {
   border: 3px solid #E5E5E5;
 }
 
+/* Назад вперед */
+
 .pagination {
+  display: flex;
+  width: 760px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 78px;
+  list-style-type: none;
   background-color: #EBEBEB;
 }
 
 .pagination-button {
+  display: block;
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 18px;
@@ -632,6 +708,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  padding: 25px;
 }
 
 .pagination-link {
@@ -639,4 +716,14 @@ body {
   line-height: 20px;
   text-align: center;
   color: #444444;
+}
+
+.pagination-next {
+  margin-left: auto;
+}
+
+.pagination-number {
+  padding: 10px;
+  margin: auto 0;
+
 }
