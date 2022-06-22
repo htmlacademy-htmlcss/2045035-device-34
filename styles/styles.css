@@ -58,6 +58,8 @@ body {
 }
 
 .text-title {
+  margin: 0;
+  padding: 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -88,6 +90,13 @@ body {
   margin-top: 40px;
 }
 
+.page-header-catalog {
+  background-color: #FFE17F;
+  min-height: 186px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
 .navigation {
   display: flex;
   flex-direction: column;
@@ -102,6 +111,9 @@ body {
 }
 
 .search-site {
+  display: grid;
+  grid-template-columns: 359px 160px;
+  grid-template-rows: 40px;
   width: 517px;
   height: 40px;
   margin-right: 26px;
@@ -115,7 +127,9 @@ body {
 }
 
 .navigation-user,
-.navigation-site {
+.navigation-site,
+.navigation-site-list,
+.navigation-catalog {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -127,8 +141,12 @@ body {
   display: flex;
 }
 
+.navigation-user {
+  margin-left: auto;
+}
+
 .navigation-user-link {
-  display: block;
+  display: flex;
   padding-bottom: 10px;
   font-family: inherit;
   font-weight: 400;
@@ -137,10 +155,16 @@ body {
   text-decoration: none;
 }
 
+.enter {
+  margin-right: 230px;
+}
+
+.compare {
+  margin-right: 26px;
+}
+
 .navigation-site-link {
-  display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  display: flex;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -150,10 +174,19 @@ body {
   text-decoration: none;
 }
 
+.navigation-catalog {
+  margin-right: auto;
+}
+
+.navigation-site-item {
+  margin-left: 45px;
+}
+
 /* Лучшие предложения */
 
 .top-item {
   margin-top: -150px;
+  margin-bottom: 70px;
 }
 
 .slider {
@@ -174,7 +207,7 @@ body {
 .slider-number {
   position: absolute;
   margin-top: 29px;
-  margin-left: 261px;
+  margin-left: 301px;
   font-family: 'Rubik';
   font-weight: 700;
   font-size: 180px;
@@ -184,10 +217,45 @@ body {
   color: #FFFFFF;
 }
 
+.slider-title {
+  z-index: 2;
+  margin-top: 121px;
+  margin-bottom: 21px;
+}
+
+.slider-text {
+  margin-bottom: 51px;
+}
+
+.button-pagination {
+  display: flex;
+  margin-bottom: 49px;
+}
+
+.slider-pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  list-style-type: none;
+}
+
+.specifications-list {
+  display: flex;
+  padding: 0;
+}
+
+.specifications-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
 .specifications-value {
   font-weight: 400;
   font-size: 36px;
   line-height: 30px;
+  margin-bottom: 12px;
 }
 
 .specifications-name {
@@ -198,10 +266,11 @@ body {
 /* Категории товаров */
 
 .product-categories-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  gap: 40px;
   margin: 0;
+  margin-bottom: 70px;
   padding: 0;
 }
 
@@ -213,10 +282,6 @@ body {
 
 }
 
-.product-categories-item:nth-child(6n) {
-  margin-right: 0;
-}
-
 .product-categories-link {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -226,12 +291,15 @@ body {
   text-decoration: none;
 }
 
+.product-categories-item {
+  display: flex;
+}
+
 .product-categories-icon {
   background-color: #FFE17F;
-  background-position: center center;
-  background-repeat: no-repeat;
   Width: 160px;
   Height: 160px;
+  margin-bottom: 33px;
 }
 
 .glasses {
@@ -262,6 +330,7 @@ body {
 
 .advantages {
   background-color: #F0F0F0;
+  margin-bottom: 70px;
 }
 
 .advantages-content {
@@ -269,20 +338,39 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 280px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages-item:not(:last-child) {
+  margin-bottom: 35px;
 }
 
 .product-categories-title {
   margin: 0;
 }
 
+.advantages-description {
+  padding-top: 72px;
+  padding-right: 72px;
+  padding-left: 63px;
+}
+
 /* Доставка под заказ */
 
 .delivery-under-the-order {
   display: flex;
+  margin-bottom: 70px;
 }
 
 .button-delivery {
+  width: 1160px;
+  padding: 40px 125px;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -299,6 +387,17 @@ body {
 
 .company-content {
   display: flex;
+  padding-top: 47px;
+  margin-bottom: 70px;
+}
+
+.company-content-title {
+  margin-bottom: 48px;
+}
+
+.content-text {
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .about-company {
@@ -306,12 +405,23 @@ body {
   margin-right: 108px;
 }
 
+.delivery-company-list {
+  margin: 0;
+}
+
 .delivery-company-item {
   font-weight: 700;
   line-height: 20px;
+  margin-bottom: 19px;
+}
+
+.delivery-company-item:last-child {
+  margin-bottom: 30px;
 }
 
 .text-small-title {
+  margin: 0;
+  margin-bottom: 15px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -321,6 +431,28 @@ body {
 
 .newsletter {
   background-color: #F0F0F0;
+  padding-top: 64px;
+  padding-bottom: 56px;
+}
+
+.mail-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 0;
+  margin-bottom: 144px;
+}
+
+.mail-content {
+  display: flex;
+}
+
+.newsletter-form {
+  width: 810px;
+}
+
+.it-for-free {
+  margin-left: auto;
 }
 
 /* Подвал */
@@ -331,26 +463,28 @@ body {
 
 .page-footer-content {
   display: flex;
-  width: 1160px;
-  margin: 0 auto;
+}
+
+.footer-logo {
+  margin-top: 62px;
+  margin-bottom: 35px;
 }
 
 .footer-address {
-  width: 239px;
-  margin-right: 119px;
-}
-
-.footer-navigation-social {
-  display: flex;
-  flex-direction: column;
-  width: 444px;
-  margin-right: 183px;
+  width: 317px;
+  margin-right: 40px;
 }
 
 .about-text {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+}
+
+.footer-navigation-social {
+  display: flex;
+  flex-direction: column;
+  margin-right: 183px;
 }
 
 .footer-navigation-link {
@@ -364,17 +498,75 @@ body {
   color: #FFFFFF;
 }
 
+.footer-navigation-list {
+  display: flex;
+  justify-content: space-between;
+  width: 444px;
+  margin-top: 137px;
+  margin-bottom: 62px;
+}
 
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 61px;
+}
+
+.footer-social-item {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.footer-social-item:last-child {
+  margin-right: 0;
+}
+
+.footer-tell-html-link {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 0;
+  margin-top: 140px;
+  padding: 0;
+}
+
+.tell-text {
+  margin-bottom: 63px;
+  margin-left: auto;
+}
+
+.htmlacademy-link {
+  margin-left: auto;
+}
 
 /* Страница каталога */
 
 /* Хлебные крошки */
+
+.text-title-catalog {
+  margin-left: 60px;
+  margin-bottom: 16px;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  margin-left: 60px;
+  margin-bottom: 35px;
+  padding: 0;
+}
 
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
   color: #000000;
+  margin-right: 36px;
 }
 
 .catalog-page {
@@ -390,6 +582,12 @@ body {
   margin: 0 60px;
 }
 
+/* Основная площадь каталога */
+
+.catalog-main {
+  width: 840px;
+}
+
 /* Сортировка */
 
 .select-control {
@@ -403,6 +601,21 @@ body {
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin: 25px 40px;
+}
+
+.select-control-list {
+  margin-left: 166px;
+}
+
+.select-control-list {
+  border: 0;
+  background-color: #F0F0F0;
+}
+
+.button-select {
+  width: 10px;
+  margin-left: auto;
 }
 
 /* Список товаров */
@@ -411,14 +624,30 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #FFFFFF;
+  padding-top: 70px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px 40px;
+  width: 760px;
+  list-style-type: none;
+}
+
+.product-name-price {
+  display: flex;
 }
 
 .product-card-title {
+  width: 226px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
+  margin: 0;
+  margin-top: 32px;
 }
 
 .product-card-price {
@@ -427,15 +656,23 @@ body {
   line-height: 21px;
   text-align: right;
   color: #000000;
+  margin: 0;
+  margin-top: 32px;
+  margin-left: auto;
 }
 
 .product-card-link {
   text-decoration: none;
 }
 
-/* загрузить вперед назад */
+
+/* загрузить ещё */
 
 .pagination-show-more {
+  display: block;
+  width: 760px;
+  height: 55px;
+  margin: 44px 40px;
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 16px;
@@ -448,11 +685,20 @@ body {
   border: 3px solid #E5E5E5;
 }
 
+/* Назад вперед */
+
 .pagination {
+  display: flex;
+  width: 760px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 78px;
+  list-style-type: none;
   background-color: #EBEBEB;
 }
 
 .pagination-button {
+  display: block;
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 18px;
@@ -462,6 +708,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  padding: 25px;
 }
 
 .pagination-link {
@@ -469,4 +716,14 @@ body {
   line-height: 20px;
   text-align: center;
   color: #444444;
+}
+
+.pagination-next {
+  margin-left: auto;
+}
+
+.pagination-number {
+  padding: 10px;
+  margin: auto 0;
+
 }
