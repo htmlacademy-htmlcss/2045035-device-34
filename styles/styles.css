@@ -112,6 +112,7 @@ body {
 
 .search-site {
   display: grid;
+  box-sizing: border-box;
   grid-template-columns: 359px 160px;
   grid-template-rows: 40px;
   width: 517px;
@@ -146,8 +147,10 @@ body {
 }
 
 .navigation-user-link {
+  position: relative;
+  box-sizing: border-box;
   display: flex;
-  padding-bottom: 10px;
+  padding: 5px 0;
   font-family: inherit;
   font-weight: 400;
   align-items: center;
@@ -155,32 +158,95 @@ body {
   text-decoration: none;
 }
 
-.enter {
-  margin-right: 230px;
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #dbdbdb;
+}
+
+.login {
+  width: 231px;
+  padding-left: 26px;
+}
+
+.login .navigation-icon {
+  right: auto;
+  margin: auto 0;
 }
 
 .compare {
-  margin-right: 26px;
+  margin-left: 26px;
+  padding-left: 22px;
+}
+
+.compare .navigation-icon {
+  right: auto;
+  margin: auto 0;
+}
+
+.basket {
+  margin-left: 33px;
+  padding-left: 28px;
+}
+
+.basket .navigation-icon {
+  right: auto;
+  margin: auto 0;
+  }
+
+.navigation-user-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-user-link:focus {
+  outline: 2px solid AF4FFF;
+}
+
+.navigation-user-link:active {
+  opacity: 0.3;
 }
 
 .navigation-site-link {
   display: flex;
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: inherit;
   text-decoration: none;
+  margin: 0;
 }
 
 .navigation-catalog {
   margin-right: auto;
 }
 
+.navigation-catalog-button {
+  position: relative;
+  background-color: #FFE17F;
+  border: none;
+
+}
+
+.navigation-catalog-button .navigation-site-link {
+  padding-right: 57px;
+}
+
+.navigation-catalog-icon {
+  position: absolute;
+}
+
 .navigation-site-item {
   margin-left: 45px;
 }
+
+
 
 /* Лучшие предложения */
 
