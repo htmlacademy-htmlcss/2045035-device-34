@@ -648,11 +648,11 @@ body {
   cursor: pointer;
 }
 
-.delivery-under-the-order:hover:after  {
+.delivery-under-the-order:hover:after {
   background-color: #FFC700;
 }
 
-.delivery-under-icon:hover  {
+.delivery-under-icon:hover {
   opacity: 1;
 }
 
@@ -683,7 +683,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color:rgba(220, 220, 220, 0.5);
+  background-color: rgba(220, 220, 220, 0.5);
 }
 
 .delivery-under-img {
@@ -706,7 +706,7 @@ body {
   margin-top: 44px;
   margin-right: 62px;
   margin-left: auto;
-  background-color:#000000;
+  background-color: #000000;
   opacity: 0.3;
   z-index: 1;
 }
@@ -728,8 +728,16 @@ body {
 .company-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 108px;
-  margin-bottom: 70px;
+  gap: 98px;
+  margin-bottom: 80px;
+}
+
+.text-small-title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .company-content-title {
@@ -756,47 +764,88 @@ body {
   top: 0;
   width: 84px;
   height: 7px;
-  background-color:#000000
+  background-color: #000000
 }
 
 .delivery-company-list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .delivery-company-item {
+  position: relative;
   font-weight: 700;
   line-height: 20px;
   margin-bottom: 19px;
   letter-spacing: -0.02em;
+  padding-left: 34px;
+  margin-left: 3px;
 }
 
 .delivery-company-item:last-child {
-  margin-bottom: 30px;
+  margin-bottom: 38px;
 }
 
-.text-small-title {
-  margin: 0;
-  margin-bottom: 15px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
+.about-company .button {
+  padding: 0.5em 1.5em;
+  box-sizing: content-box;
+  }
+
+.delivery-company-item::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  margin: auto 0;
+  border-radius: 50%;
+  background-color: #FFC700;
+}
+
+.contacts {
+  position: relative;
+  padding-top: 47px;
+}
+
+.contacts::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 84px;
+  height: 7px;
+  background-color: #000000
 }
 
 /* Подпишитесь на расылку */
 
 .newsletter {
   background-color: #F0F0F0;
+  min-width: 1160px;
   padding-top: 64px;
   padding-bottom: 56px;
 }
 
 .mail-info {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 607px 1fr;
   margin: 0;
   margin-bottom: 144px;
+}
+
+.mail-info .text-title {
+  margin-left: 7px;
+}
+
+.mail-info-text {
+  margin: 0;
+  margin-top: 10px;
 }
 
 .mail-content {
@@ -804,10 +853,13 @@ body {
 }
 
 .newsletter-form {
+  box-sizing: border-box;
   width: 810px;
+  height: 57px;
 }
 
 .it-for-free {
+  margin: 0;
   margin-left: auto;
 }
 
@@ -815,6 +867,7 @@ body {
 
 .page-footer {
   background-color: #444444;
+  min-width: 1160px;
 }
 
 .page-footer-content {
@@ -828,6 +881,7 @@ body {
 
 .footer-address {
   width: 317px;
+  margin: 0;
   margin-right: 40px;
 }
 
@@ -835,6 +889,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  margin: 0;
 }
 
 .footer-navigation-social {
