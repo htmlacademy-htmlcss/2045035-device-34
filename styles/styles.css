@@ -146,6 +146,12 @@ body {
   margin-bottom: 30px;
 }
 
+.navigation-logo {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .search-site {
   display: grid;
   box-sizing: border-box;
@@ -209,7 +215,17 @@ body {
   padding-left: 26px;
 }
 
-.login .navigation-icon {
+.log-out {
+  opacity: 0.3;
+}
+
+.name {
+  padding-left: 26px;
+  margin-right: 28px;
+}
+
+.login .navigation-icon,
+.name .navigation-icon {
   right: auto;
   margin: auto 0;
 }
@@ -278,9 +294,11 @@ body {
 }
 
 
-.navigation-site-item {
+.navigation-site-list .navigation-site-link {
   margin-left: 45px;
 }
+
+
 
 /* Лучшие предложения */
 
@@ -1030,12 +1048,9 @@ body {
   margin-left: auto;
 }
 
-.html-icon:hover {
+.htmlacademy-link:hover .html-icon {
   fill: #FFFFFF;
 }
-
-
-
 
 /* Страница каталога */
 
@@ -1051,7 +1066,7 @@ body {
   list-style-type: none;
   margin: 0;
   margin-left: 60px;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
   padding: 0;
 }
 
@@ -1061,6 +1076,26 @@ body {
   text-decoration: none;
   color: #000000;
   margin-right: 36px;
+  cursor: pointer;
+}
+
+.navigation-site-item {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-icon {
+  position: absolute;
+  width: 4px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  margin-right: 16px;
 }
 
 .catalog-page {
@@ -1096,10 +1131,12 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin: 25px 40px;
+  margin-right: 206px;
 }
 
 .select-control-list {
-  margin-left: 166px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .select-control-list {
@@ -1107,9 +1144,26 @@ body {
   background-color: #F0F0F0;
 }
 
-.button-select {
-  width: 10px;
+.select-arrow {
+  display: flex;
   margin-left: auto;
+  margin-right: 40px;
+}
+
+.button-select {
+  position: relative;
+  width: 30px;
+}
+
+.select-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  margin: auto;
+  opacity: 0.3;
 }
 
 /* Список товаров */
@@ -1127,6 +1181,12 @@ body {
   gap: 44px 40px;
   width: 760px;
   list-style-type: none;
+  margin: 0;
+}
+
+.product-card {
+  margin: 0;
+  padding: 0;
 }
 
 .product-name-price {
@@ -1177,6 +1237,15 @@ body {
   text-transform: uppercase;
   background-color: #FFFFFF;
   border: 3px solid #E5E5E5;
+  cursor: pointer;
+}
+
+.pagination-show-more:hover {
+  border: 3px solid #000000;
+}
+
+.pagination-show-more:active {
+  opacity: 0.3;
 }
 
 /* Назад вперед */
@@ -1189,6 +1258,14 @@ body {
   margin-bottom: 78px;
   list-style-type: none;
   background-color: #EBEBEB;
+  justify-content: space-between;
+}
+
+.pagination-number-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-button {
@@ -1217,7 +1294,6 @@ body {
 }
 
 .pagination-number {
-  padding: 10px;
+  padding: 10px 16px;
   margin: auto 0;
-
 }
