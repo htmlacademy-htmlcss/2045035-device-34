@@ -12,7 +12,8 @@
     <header class="page-header-catalog wrapper">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="logo buttons-status" src="images/logo.svg" width="145" height="36" alt="Логотип магазина электроники Девайс.">
+          <img class="logo buttons-status" src="images/logo.svg" width="145" height="36"
+            alt="Логотип магазина электроники Девайс.">
         </a>
         <!-- Навигация пользователя    -->
         <!-- Поиск по сайту -->
@@ -124,34 +125,68 @@
       <section class="catalog-page">
         <div class="catalog-content wrapper">
           <div class="filter">
-            <h2 class="select-control-title">Фильтр</h2>
+            <h2 class="select-control-title filter-title">Фильтр</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость</legend>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 119px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      от <input class="range-input" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label">
+                      до <input class="range-input" type="number" value="5000" name="max-price" style=" width: 119px">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Цвет</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="black" checked> Чёрный
+                      <input class="control-input" type="checkbox" name="black" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Чёрный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="white" checked> Белый
+                      <input class="control-input" type="checkbox" name="black" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="blue"> Синий
+                      <input class="control-input" type="checkbox" name="black">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="red"> Красный
+                      <input class="control-input" type="checkbox" name="black">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="pink"> Розовый
+                      <input class="control-input" type="checkbox" name="black">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Розовый</span>
                     </label>
                   </li>
                 </ul>
@@ -161,12 +196,16 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="bluetooth-existence" value="Yes" checked>Есть
+                      <input class="visually-hidden control-input" type="radio" name="product-group" value="shaving-supplies" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Есть</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="bluetooth-existence" value="No">Нет
+                      <input class="visually-hidden control-input" type="radio" name="product-group" value="care-products">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Нет</span>
                     </label>
                   </li>
                 </ul>
@@ -178,7 +217,7 @@
           <!-- Сортировка -->
           <div class="catalog-main">
             <div class="select-control">
-              <h2 class="select-control-title">Сортировка:</h2>
+              <h2 class="select-control-title  select-title">Сортировка:</h2>
               <select class="select-control-list" aria-label="Сортировка">
                 <option value="popular">Популярные</option>
                 <option value="expensive">Дорогие</option>
