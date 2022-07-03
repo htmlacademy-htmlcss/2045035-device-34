@@ -47,7 +47,7 @@
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-link basket  buttons-status" href="#">
+              <a class="navigation-user-link basket buttons-status" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="15"
                   viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -56,6 +56,43 @@
                 </svg>
                 Корзина
               </a>
+
+              <!-- Поповер -->
+              <div class="popover popover-cart">
+                <h2 class="popover-title visually-hidden">Корзина</h2>
+                <svg class="popover-coner" aria-hidden="true" focusable="false" width="14" height="7" viewBox="0 0 14 7"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6.167H0l7-6 7 6Z" fill="#000" />
+                </svg>
+                <div class="popover-content">
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <img class="slider-image" src="images/icons_header/product-1-small 1.jpg" width="39" height="43"
+                        alt="Любительская селфи-палка.">
+                      <p class="cart-item-title">Любительская<br> селфи-палка</p>
+                      <button type="button" class="cart-item-button">
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <img class="slider-image" src="images/icons_header/product-1-small 2.jpg" width="39" height="43"
+                        alt="Любительская селфи-палка.">
+                      <p class="cart-item-title">Профессиональная
+                        селфи-палка</p>
+                      <button type="button" class="cart-item-button">
+                      </button>
+                    </li>
+                    <div class="cart-input-list">
+                      <label class="cart-item-label">
+                        Товаров <input class="cart-item-input item-input-number" type="number" value="2" name="product">
+                      </label>
+                      <label class="cart-item-label">
+                        Сумма <input class="cart-item-input item-input-amount" type="number" value="2000" name="amount">₽
+                      </label>
+                    </div>
+                    <a class="cart-link" href="#">Открыть корзину</a>
+                  </ul>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
