@@ -367,7 +367,7 @@ body {
 
 .popover {
   /* скрывает поповер */
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 42px;
   right: -78px;
@@ -489,6 +489,23 @@ body {
   margin: 20px;
 }
 
+.cart-link:disabled .cart-link-text {
+  opacity: 0.3;
+}
+
+.cart-link:hover {
+  background-color: #FFE17F;
+}
+
+.cart-link:active .cart-link-text {
+  opacity: 0.3;
+}
+
+.cart-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .cart-item-cover {
   display: flex;
   cursor: pointer;
@@ -524,6 +541,7 @@ body {
 }
 
 .navigation-catalog {
+  position: relative;
   margin-right: auto;
 }
 
@@ -533,10 +551,6 @@ body {
   border: none;
   padding: 15px 0;
   cursor: pointer;
-}
-
-.navigation-catalog:focus-within > .navigation-catalog-cover {
-  display: grid;
 }
 
 .navigation-catalog-button .navigation-site-link {
@@ -569,12 +583,12 @@ body {
   /* скрывает список */
   display: none;
   left: -60px;
-  top: 60px;
+  top: 54px;
   bottom: 0;
   grid-template-columns: 252px 211px 211px;
   background-color: #FFE17F;
   width: 1160px;
-  min-height: 150px;
+  min-height: 160px;
   padding: 0;
   padding-left: 60px;
   padding-top: 5px;
@@ -586,7 +600,7 @@ body {
 
 .navigation-catalog-item {
   text-align: start;
-  margin-bottom: 18px;
+  margin-bottom: 6px;
 }
 
 .navigation-catalog-link {
@@ -596,6 +610,10 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: #000000;
+}
+
+.navigation-catalog:focus-within > .navigation-catalog-cover {
+  display: grid;
 }
 
 /* Лучшие предложения */
