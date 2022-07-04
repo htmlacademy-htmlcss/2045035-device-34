@@ -406,9 +406,7 @@ body {
 
 .cart-item {
   position: relative;
-  display: grid;
-  grid-template-columns: 39px 1fr 10px;
-  gap: 24px;
+  display: flex;
   padding: 20px;
 }
 
@@ -417,6 +415,7 @@ body {
   padding: 0;
   font-size: 16px;
   line-height: 20px;
+  margin-left: 23px;
 }
 
 .cart-item-button {
@@ -425,6 +424,8 @@ body {
   height: 20px;
   background-image: url(../images/icons_header/close-icon.svg);
   background-repeat: no-repeat;
+  margin-left: auto;
+  cursor: pointer;
 }
 
 .cart-item + .cart-item::before {
@@ -470,7 +471,7 @@ body {
 
 .item-input-amount {
   min-width: 80px;
- }
+}
 
 .cart-link {
   display: block;
@@ -486,6 +487,11 @@ body {
   text-decoration: none;
   padding: 14px 23px;
   margin: 20px;
+}
+
+.cart-item-cover {
+  display: flex;
+  cursor: pointer;
 }
 
 /* Поповер End */
@@ -1994,7 +2000,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  display: none; /* Скрывает окно */
+  display: none;
+  /* Скрывает окно */
   width: 100%;
   height: 100%;
   background-color: rgba(240, 240, 240, 0.9);
