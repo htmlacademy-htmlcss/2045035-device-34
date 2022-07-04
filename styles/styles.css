@@ -232,6 +232,15 @@ body {
   top: 0;
 }
 
+.search-holder::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
 .search-button:hover {
   color: #FFFFFF;
   background-color: #000000;
@@ -242,6 +251,11 @@ body {
 }
 
 .search-button:focus::after {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.search-holder:focus::after {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
@@ -323,7 +337,7 @@ body {
   padding-left: 28px;
 }
 
-.basket::after {
+.basket-number::after {
   position: absolute;
   content: "2";
   width: 21px;
@@ -336,13 +350,16 @@ body {
   right: 98px;
   bottom: 7px;
   padding-top: 2px;
+  z-index: 1;
 }
 
 .navigation-user-item {
   position: relative;
 }
 
-.basket:focus-within > .popover {
+/* ссылка что бы открывал поповер */
+
+.navigation-user-item:focus-within > .popover {
   display: flex;
 }
 
@@ -350,7 +367,7 @@ body {
 
 .popover {
   /* скрывает поповер */
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 42px;
   right: -78px;
@@ -375,12 +392,13 @@ body {
 }
 
 .popover-content {
-  display: flex;
-  flex-direction: column;
+
   height: 100%;
 }
 
 .cart-items-list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -452,7 +470,7 @@ body {
 
 .item-input-amount {
   min-width: 80px;
-}
+ }
 
 .cart-link {
   display: block;
@@ -1976,7 +1994,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
+  display: none; /* Скрывает окно */
   width: 100%;
   height: 100%;
   background-color: rgba(240, 240, 240, 0.9);
