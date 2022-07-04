@@ -181,7 +181,7 @@ body {
   flex-grow: 1;
 }
 
-.search-holder::after {
+.search-holder::before {
   position: absolute;
   content: "";
   left: 0;
@@ -193,6 +193,11 @@ body {
 
 .search-holder:disabled {
   opacity: 0.3;
+}
+
+.search-holder-focus:focus::after {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .search-icon {
@@ -232,15 +237,6 @@ body {
   top: 0;
 }
 
-.search-holder::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-}
-
 .search-button:hover {
   color: #FFFFFF;
   background-color: #000000;
@@ -251,11 +247,6 @@ body {
 }
 
 .search-button:focus::after {
-  outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
-}
-
-.search-holder:focus::after {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
@@ -367,7 +358,7 @@ body {
 
 .popover {
   /* скрывает поповер */
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 42px;
   right: -78px;
@@ -406,6 +397,7 @@ body {
   position: relative;
   display: flex;
   padding: 20px;
+
 }
 
 .cart-item-title {
@@ -439,15 +431,15 @@ body {
 }
 
 .cart-input-list {
-  display: flex;
-  justify-content: space-between;
-  width: 320px;
-  /* display: grid;
+  display: grid;
   grid-template-columns: 120px 150px;
-  gap: 10px; */
-  padding: 12px 20px;
-  /* padding-top: 14px; */
+  height: 44px;
+  gap: 10px;
   background-color: #1A1A1A;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .cart-item-label {
@@ -455,7 +447,13 @@ body {
   background-color: transparent;
   border: none;
   appearance: textfield;
-
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F0F0F0;
+  align-items: center;
+  padding-left: 16px;
 }
 
 .cart-item-input {
@@ -467,14 +465,10 @@ body {
   margin-left: 5px;
 }
 
-.item-input-number {
-  width: 50px;
-}
-
 .item-input-amount {
   min-width: 80px;
-
 }
+
 
 .cart-link {
   display: block;
@@ -512,6 +506,7 @@ body {
 .cart-item-cover {
   display: flex;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* Поповер End */
@@ -581,7 +576,7 @@ body {
 
 /* Раскрывающийся список */
 
-.navigation-catalog-list {
+.navigation-catalog-cover {
   position: absolute;
   /* скрывает список */
   display: none;
@@ -596,13 +591,20 @@ body {
   padding-left: 60px;
   padding-top: 5px;
   margin: 0;
-  list-style-type: none;
   z-index: 1;
   box-sizing: border-box;
 }
 
+.navigation-catalog-list {
+  margin: 0;
+  padding: 0;
+}
+
 .navigation-catalog-item {
   text-align: start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   margin-bottom: 6px;
 }
 
@@ -617,6 +619,11 @@ body {
 
 .navigation-catalog:focus-within > .navigation-catalog-cover {
   display: grid;
+}
+
+.navigation-catalog-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 /* Лучшие предложения */
@@ -753,8 +760,6 @@ body {
   font-size: 16px;
   line-height: 30px;
 }
-
-
 
 /* Категории товаров */
 
@@ -1667,7 +1672,7 @@ body {
   border: 2px solid #000000;
 }
 
-.control:focus {
+.control-input:focus + .control-mark {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
@@ -2157,4 +2162,59 @@ body {
   border: none;
   padding: 0.5em 1.5em;
   z-index: 3;
+}
+
+
+/* Тултип */
+
+.tooltip {
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 26px;
+  height: 26px;
+  margin-left: 8px;
+  margin-bottom: 4px;
+  color: #242424;
+  display: block;
+}
+
+.tooltip-text {
+  background-color: #242424;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: none;
+  padding: 19px;
+  /* display: block; */
+  width: 200px;
+  transform: translate(-50%);
+  display: none;
+}
+
+.tooltip-text:after {
+  content:'';
+  background-image: url("../images/icons_header/coner.svg");
+  width: 14px;
+  height: 6px;
+  position:absolute;
+  top: -6px;
+  left: 0;
+  right: 0;
+  margin-left: 130px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }

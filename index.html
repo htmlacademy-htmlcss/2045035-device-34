@@ -85,18 +85,17 @@
                       <button type="button" class="cart-item-button buttons-status">
                       </button>
                     </li>
-                    <div class="cart-input-list">
-                      <label class="cart-item-label">
-                        Товаров <input class="cart-item-input item-input-number" type="number" value="2" name="product">
-                      </label>
-                      <label class="cart-item-label">
-                        Сумма <input class="cart-item-input item-input-amount" type="number" value="2000"
-                          name="amount">₽
-                      </label>
-                    </div>
-                    <a class="cart-link" href="#">
-                      <span class="cart-link-text">Открыть корзину</span></a>
                   </ul>
+                  <div class="cart-input-list">
+                    <label class="cart-item-label">
+                      Товаров <input class="cart-item-input item-input-number" type="number" value="2" name="product">
+                    </label>
+                    <label class="cart-item-label">
+                      Сумма <input class="cart-item-input item-input-amount" type="number" value="2000" name="amount">₽
+                    </label>
+                  </div>
+                  <a class="cart-link" href="#">
+                    <span class="cart-link-text">Открыть корзину</span></a>
                 </div>
               </div>
             </li>
@@ -117,30 +116,28 @@
             <!-- Раскрывающийся список -->
             <div class="navigation-catalog-cover">
               <ul class="navigation-catalog-list">
-                <div class="catalog-list-column">
-                  <li class="navigation-catalog-item">
-                    <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
-                  </li>
-                  <li class="navigation-catalog-item">
-                    <a class="navigation-catalog-link" href="#">Моноподы для cелфи</a>
-                  </li>
-                  <li class="navigation-catalog-item">
-                    <a class="navigation-catalog-link" href="#">Экшн-камеры</a>
-                  </li>
-                </div>
-                <div class="catalog-list-column">
-                  <li class="navigation-catalog-item">
-                    <a class="navigation-catalog-link" href="#">Фитнес-браслеты</a>
-                  </li>
-                  <li class="navigation-catalog-item">
-                    <a class="navigation-catalog-link" href="#">Умные часы</a>
-                  </li>
-                </div>
-                <div class="catalog-list-column">
-                  <li class="navigation-catalog-item">
-                    <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
-                  </li>
-                </div>
+                <li class="navigation-catalog-item">
+                  <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="navigation-catalog-item">
+                  <a class="navigation-catalog-link" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="navigation-catalog-item">
+                  <a class="navigation-catalog-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="navigation-catalog-list">
+                <li class="navigation-catalog-item">
+                  <a class="navigation-catalog-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="navigation-catalog-item">
+                  <a class="navigation-catalog-link" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="navigation-catalog-list">
+                <li class="navigation-catalog-item">
+                  <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -469,7 +466,20 @@
                 placeholder="В свободной форме">
             </div>
             <div class="field-group">
-              <label for="auth-count" class="field-group-title">Количество:</label>
+              <div class="tultip-cover">
+                <label for="auth-count" class="field-group-title">Количество:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="13" cy="13" r="13" fill="#FFE17F" />
+                      <path d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z" fill="#000" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно.
+                    Привезём сколько получится по требованиям к провозу багажа.</span>
+                </span>
+              </div>
               <div class="count-contant">
                 <button class="button-count buttons-status"></button>
                 <input class="auth-form-field auth-form-number field" type="text" id="auth-count" name="auth-count"
@@ -480,8 +490,6 @@
           </div>
           <button class="button auth-form-button" type="submit">Отправить</button>
         </form>
-
-
       </div>
     </div>
   </body>
