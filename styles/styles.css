@@ -374,9 +374,6 @@ body {
   z-index: 1;
   box-sizing: border-box;
   width: 320px;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
   background-color: #000000;
   min-height: 140px;
 }
@@ -392,16 +389,17 @@ body {
 }
 
 .popover-content {
-
   height: 100%;
 }
 
 .cart-items-list {
   display: flex;
+  width: 320px;
   flex-direction: column;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
 }
 
 .cart-item {
@@ -411,10 +409,12 @@ body {
 }
 
 .cart-item-title {
-  margin: 0;
-  padding: 0;
   font-size: 16px;
   line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
   margin-left: 23px;
 }
 
@@ -441,6 +441,7 @@ body {
 .cart-input-list {
   display: flex;
   justify-content: space-between;
+  width: 320px;
   /* display: grid;
   grid-template-columns: 120px 150px;
   gap: 10px; */
@@ -454,6 +455,7 @@ body {
   background-color: transparent;
   border: none;
   appearance: textfield;
+
 }
 
 .cart-item-input {
@@ -471,6 +473,7 @@ body {
 
 .item-input-amount {
   min-width: 80px;
+
 }
 
 .cart-link {
@@ -2023,6 +2026,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(240, 240, 240, 0.9);
+  z-index: 3;
 }
 
 .modal {
@@ -2077,7 +2081,6 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 36px;
   margin-bottom: 42px;
-
 }
 
 .field-group-title {
@@ -2108,17 +2111,50 @@ body {
 }
 
 .product-plas-count {
-  display: flex;
+  display: grid;
   grid-template-columns: 540px 180px;
   gap: 40px;
+  margin-bottom: 42px;
 }
 
 .count-contant {
   display: flex;
-
 }
 
 .auth-form-number {
   width: 60px;
-  flex-grow: 0;
+  font: inherit;
+  margin: 0, auto;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.button-count {
+  position: relative;
+  background-color: #F0F0F0;
+  border: none;
+  width: 60px;
+  cursor: pointer;
+}
+
+.button-count::after,
+.button-count::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+  transform: translate(-8px, -2px);
+}
+
+.button-plus::after {
+  transform: rotate(90deg) translate(-2px, 8px);
+}
+
+.auth-form-button {
+  background-color: transparent;
+  border: none;
+  padding: 0.5em 1.5em;
+  z-index: 3;
 }
