@@ -342,9 +342,14 @@ body {
   position: relative;
 }
 
+.basket:focus-within > .popover {
+  display: flex;
+}
+
 /* Поповер */
 
 .popover {
+  /* скрывает поповер */
   display: none;
   position: absolute;
   top: 42px;
@@ -506,6 +511,10 @@ body {
   cursor: pointer;
 }
 
+.navigation-catalog:focus-within > .navigation-catalog-cover {
+  display: grid;
+}
+
 .navigation-catalog-button .navigation-site-link {
   padding-right: 65px;
 }
@@ -529,6 +538,41 @@ body {
   outline-offset: 2px;
 }
 
+/* Раскрывающийся список */
+
+.navigation-catalog-list {
+  position: absolute;
+  /* скрывает список */
+  display: none;
+  left: -60px;
+  top: 60px;
+  bottom: 0;
+  grid-template-columns: 252px 211px 211px;
+  background-color: #FFE17F;
+  width: 1160px;
+  min-height: 150px;
+  padding: 0;
+  padding-left: 60px;
+  padding-top: 5px;
+  margin: 0;
+  list-style-type: none;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.navigation-catalog-item {
+  text-align: start;
+  margin-bottom: 18px;
+}
+
+.navigation-catalog-link {
+  text-decoration: none;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
 
 /* Лучшие предложения */
 
@@ -1924,4 +1968,114 @@ body {
 .pagination-number {
   padding: 10px 15px;
   margin: auto 0;
+}
+
+/* Модальное окно */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.9);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border: 10px solid #000000;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.modal-auth {
+  box-sizing: border-box;
+  width: 920px;
+  padding: 60px 72px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 72px;
+  right: 68px;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../images/close-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 42px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  align-self: start;
+}
+
+.name-plas-mail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  margin-bottom: 42px;
+
+}
+
+.field-group-title {
+  font-family: 'Rubik';
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+
+.auth-form-field {
+  box-sizing: border-box;
+  height: 60px;
+  background-color: #F0F0F0;
+  border: none;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.mail-wrong {
+  font-size: 14px;
+  line-height: 20px;
+  color: #FF3D3D;
+  margin: 0;
+  padding: 0;
+  padding-top: 2px;
+}
+
+.product-plas-count {
+  display: flex;
+  grid-template-columns: 540px 180px;
+  gap: 40px;
+}
+
+.count-contant {
+  display: flex;
+
+}
+
+.auth-form-number {
+  width: 60px;
+  flex-grow: 0;
 }
