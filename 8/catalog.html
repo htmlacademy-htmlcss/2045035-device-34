@@ -37,10 +37,10 @@
                     d="M0 12.787h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.5-3.5-3.5S3 2.387 3 4.287c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.5Z"
                     fill="#000" />
                 </svg>
-                Коля Петухов
+                <span class="name-latters">Коля Петухов</span>
               </a>
             </li>
-            <li class="navigation-user-item">
+            <li class="navigation-user-item log-out-cover">
               <a class="navigation-user-link log-out" href="#">
                 Выйти
               </a>
@@ -93,18 +93,17 @@
                       <button type="button" class="cart-item-button buttons-status">
                       </button>
                     </li>
-                    <div class="cart-input-list">
-                      <label class="cart-item-label">
-                        Товаров <input class="cart-item-input item-input-number" type="number" value="2" name="product">
-                      </label>
-                      <label class="cart-item-label">
-                        Сумма <input class="cart-item-input item-input-amount" type="number" value="2000"
-                          name="amount">₽
-                      </label>
-                    </div>
-                    <a class="cart-link" href="#">
-                      <span class="cart-link-text">Открыть корзину</span></a>
                   </ul>
+                  <div class="cart-input-list">
+                    <label class="cart-item-label">
+                      Товаров: <input class="cart-item-input item-input-number" type="text" value="2" name="product">
+                    </label>
+                    <label class="cart-item-label">
+                      Сумма: <input class="cart-item-input item-input-amount" type="text" value="2000" name="amount">₽
+                    </label>
+                  </div>
+                  <a class="cart-link" href="#">
+                    <span class="cart-link-text">Открыть корзину</span></a>
                 </div>
               </div>
             </li>
@@ -115,12 +114,36 @@
           <div class="navigation-catalog">
             <button class="navigation-catalog-button">
               <span class="navigation-site-link">Каталог товаров</span>
-              <svg class="navigation-catalog-icon" aria-hidden="true" focusable="false" width="50" height="51"
-                viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="25" cy="25.787" r="24" stroke="#000" stroke-width="2" />
-                <path d="M33 24.787h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000" />
-              </svg>
+              <span class="navigation-catalog-icon"></span>
             </button>
+
+            <!-- Раскрывающийся список -->
+            <div class="navigation-catalog-cover">
+              <ul class="navigation-catalog-list">
+                <li class="navigation-catalog-item">
+                  <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="navigation-catalog-item">
+                  <a class="navigation-catalog-link" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="navigation-catalog-item">
+                  <a class="navigation-catalog-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="navigation-catalog-list">
+                <li class="navigation-catalog-item">
+                  <a class="navigation-catalog-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="navigation-catalog-item">
+                  <a class="navigation-catalog-link" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="navigation-catalog-list">
+                <li class="navigation-catalog-item">
+                  <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <ul class="navigation-site-list">
             <li class="navigation-site-item ">
