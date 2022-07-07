@@ -181,17 +181,6 @@ body {
   flex-grow: 1;
 }
 
-.search-holder-cover::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  pointer-events: none;
-  /* background-color: #C4C4C4; */
-}
-
 .search-button {
   width: 160px;
   margin-left: auto;
@@ -247,13 +236,18 @@ body {
   outline-offset: 2px;
 }
 
-.search-holder-cover:focus::after + .search-holder {
+.search-holder-cover {
+  width: 261px;
+  height: 40px;
+}
+
+.search-holder-cover:focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
 
+
 .navigation-user,
-.navigation-site,
 .navigation-site-list,
 .navigation-catalog {
   display: flex;
@@ -268,6 +262,12 @@ body {
   display: grid;
   grid-template-columns: 517px 497px;
   gap: 26px;
+}
+
+.navigation-site {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  margin-bottom: 130px;
 }
 
 .navigation-user-link {
@@ -324,23 +324,30 @@ body {
 .basket {
   display: block;
   position: relative;
-  padding-left: 26px;
+  padding-left: 28px;
   transform: translateY(-2px);
 }
 
-.basket-number::after {
+.basket::after {
   position: absolute;
-  content: "2";
+  content: "";
   width: 21px;
   height: 21px;
   background-color: #FFFFFF;
   border-radius: 50%;
+  right: 97px;
+  top: 11px;
+}
+
+.basket-number {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -17px;
+  top: 14px;
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  right: 94px;
-  bottom: 8px;
-  padding-top: 2px;
   z-index: 1;
 }
 
@@ -379,6 +386,7 @@ body {
   z-index: 1;
   box-sizing: border-box;
   width: 320px;
+  color: #ffffff;
   background-color: #000000;
   min-height: 140px;
 }
@@ -452,7 +460,6 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 44px;
-  /* gap: 10px; */
   background-color: #1A1A1A;
   font-family: 'Rubik';
   font-weight: 400;
@@ -2075,6 +2082,7 @@ body {
 
 .modal {
   position: relative;
+  top: 20%;
   margin: auto;
   padding: 40px;
   background-color: #ffffff;
@@ -2140,7 +2148,7 @@ body {
   height: 60px;
   background-color: #F0F0F0;
   border: none;
-  padding: 20px;
+  padding: 20px 10px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -2207,7 +2215,6 @@ body {
   padding: 0.5em 1.5em;
   z-index: 3;
 }
-
 
 /* Тултип */
 
