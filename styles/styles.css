@@ -1272,6 +1272,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   cursor: pointer;
+  transform: translateX(2px);
 }
 
 .newsletter-button:focus {
@@ -1282,13 +1283,14 @@ body {
 .it-for-free-cover {
   position: relative;
   margin: auto 0;
+  margin-right: 2px;
 }
 
 .it-for-free {
   display: block;
   padding: 0;
   margin: 0;
-  padding-left: 35px;
+  padding-left: 32px;
 }
 
 .it-for-free-icon {
@@ -1378,7 +1380,7 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 131px;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 
@@ -1438,7 +1440,7 @@ body {
   opacity: 0.3;
 }
 
-.button-social:focus {
+.footer-social-item:focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
@@ -1472,12 +1474,9 @@ body {
 }
 
 .html-icon {
-  position: absolute;
-  top: 83px;
   right: 0;
   bottom: 0;
   left: 0;
-  margin-left: auto;
 }
 
 .html-icon {
@@ -1490,6 +1489,14 @@ body {
 
 .html-icon:active {
   opacity: 0.3;
+}
+
+.htmlacademy-link {
+  position: absolute;
+  top: 83px;
+  width: 115px;
+  height: 33px;
+  margin-left: 124px;
 }
 
 .htmlacademy-link:focus {
