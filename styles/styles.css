@@ -270,15 +270,6 @@ body {
   gap: 26px;
   }
 
-/* .navigation-user-item {
-  position: relative;
-  margin-left: 28px;
-}
-
-.navigation-user-item:first-child {
-  margin-left: 0;
-} */
-
 .navigation-user-link {
   position: relative;
   box-sizing: border-box;
@@ -314,34 +305,26 @@ body {
 }
 
 .log-out {
-  /* display: flex; */
   opacity: 0.3;
   margin-left: auto;
-  /* flex-grow: 1; */
 }
 
 .name {
   padding-left: 26px;
-  /* margin-right: auto; */
 }
 
 .name-latters {
   width: 120px;
-  /* line-height: 18px; */
-  /* padding: 5px 0; */
 }
 
 .compare {
-  /* margin-left: 26px; */
   padding-left: 22px;
 }
 
 .basket {
   display: block;
   position: relative;
-  /* margin-left: 34px; */
   padding-left: 26px;
-  /* margin-right: -3px; */
   transform: translateY(-2px);
 }
 
@@ -366,6 +349,7 @@ body {
 }
 
 .navigation-user-item-basket {
+  position: relative;
   margin-left: 35px;
 }
 
@@ -464,36 +448,16 @@ body {
   display: flex;
   width: 320px;
   box-sizing: border-box;
-  padding: 2px 20px;
+  padding: 0 20px;
   justify-content: space-between;
+  align-items: center;
   height: 44px;
-  gap: 10px;
+  /* gap: 10px; */
   background-color: #1A1A1A;
   font-family: 'Rubik';
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-}
-
-.cart-item-label {
-  display: flex;
-  background-color: transparent;
-  border: none;
-  font-family: 'Rubik';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #F0F0F0;
-  align-items: center;
-}
-
-.cart-item-input {
-  font: inherit;
-  background-color: transparent;
-  border: none;
-  color: #F0F0F0;
-  width: 40px;
-  margin-left: 4px;
 }
 
 .cart-link {
@@ -508,7 +472,7 @@ body {
   text-transform: uppercase;
   background-color: #FFFFFF;
   text-decoration: none;
-  padding: 14px 23px;
+  padding: 15px 23px;
   margin: 20px;
 }
 
@@ -1178,8 +1142,13 @@ body {
 }
 
 
-.company-content .button {
-  padding: 0.5em 1.5em;
+.about-company .button {
+  padding: 0.5em 1.2em;
+  box-sizing: content-box;
+}
+
+.contacts .button {
+  padding: 0.5em 1.7em;
   box-sizing: content-box;
 }
 
