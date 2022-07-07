@@ -171,7 +171,7 @@ body {
 }
 
 .search-holder {
-  padding: 10px 48px;
+  padding: 10px 46px;
   height: 40px;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
@@ -261,21 +261,14 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.navigation-user-item {
-  position: relative;
+  justify-content: flex-end;
 }
 
 .navigation-search-user {
   display: grid;
   grid-template-columns: 517px 497px;
   gap: 26px;
-}
-
-.navigation-user {
-  margin-left: auto;
-}
+  }
 
 .navigation-user-link {
   position: relative;
@@ -299,6 +292,13 @@ body {
   fill: #dbdbdb;
 }
 
+.login .navigation-icon,
+.name .navigation-icon,
+.compare .navigation-icon {
+  right: auto;
+  margin: auto 0;
+}
+
 .login {
   width: 231px;
   padding-left: 26px;
@@ -306,7 +306,7 @@ body {
 
 .log-out {
   opacity: 0.3;
-  margin-left: 28px;
+  margin-left: auto;
 }
 
 .name {
@@ -315,34 +315,17 @@ body {
 
 .name-latters {
   width: 120px;
-  line-height: 18px;
-  padding: 4px 0;
-}
-
-.name-page {
-  margin-right: auto;
-}
-
-.login .navigation-icon,
-.name .navigation-icon {
-  right: auto;
-  margin: auto 0;
 }
 
 .compare {
-  margin-left: 26px;
   padding-left: 22px;
 }
 
-.compare .navigation-icon {
-  right: auto;
-  margin: auto 0;
-}
-
 .basket {
+  display: block;
   position: relative;
-  margin-left: 33px;
-  padding-left: 28px;
+  padding-left: 26px;
+  transform: translateY(-2px);
 }
 
 .basket-number::after {
@@ -355,19 +338,35 @@ body {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  right: 96px;
-  bottom: 9px;
+  right: 94px;
+  bottom: 8px;
   padding-top: 2px;
   z-index: 1;
 }
 
+.basket .navigation-icon {
+  right: auto;
+}
+
+.navigation-user-item-basket {
+  position: relative;
+  margin-left: 35px;
+}
+
+.navigation-user-item-compare {
+  margin-left: 27px;
+}
+
+.navigation-user-item-name {
+  margin-right: auto;
+}
 
 
 /* ссылка что бы открывал поповер */
 
 .navigation-user-item:focus-within > .popover {
   display: flex;
-}
+  }
 
 /* Поповер */
 
@@ -449,36 +448,16 @@ body {
   display: flex;
   width: 320px;
   box-sizing: border-box;
-  padding: 2px 20px;
+  padding: 0 20px;
   justify-content: space-between;
+  align-items: center;
   height: 44px;
-  gap: 10px;
+  /* gap: 10px; */
   background-color: #1A1A1A;
   font-family: 'Rubik';
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-}
-
-.cart-item-label {
-  display: flex;
-  background-color: transparent;
-  border: none;
-  font-family: 'Rubik';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #F0F0F0;
-  align-items: center;
-}
-
-.cart-item-input {
-  font: inherit;
-  background-color: transparent;
-  border: none;
-  color: #F0F0F0;
-  width: 40px;
-  margin-left: 4px;
 }
 
 .cart-link {
@@ -493,7 +472,7 @@ body {
   text-transform: uppercase;
   background-color: #FFFFFF;
   text-decoration: none;
-  padding: 14px 23px;
+  padding: 15px 23px;
   margin: 20px;
 }
 
@@ -522,10 +501,6 @@ body {
 
 /* Поповер End */
 
-.basket .navigation-icon {
-  right: auto;
-  margin: auto 0;
-}
 
 .navigation-site-link {
   display: flex;
@@ -602,14 +577,13 @@ body {
   opacity: 1;
 }
 
-.navigation-catalog-button:active > .navigation-catalog-icon::after {
+.navigation-catalog:focus-within .navigation-catalog-icon::after {
   transform: rotate(0);
 }
 
 
 .navigation-catalog-button:focus {
   outline: 2px solid #AF4FFF;
-  /* outline-offset: 2px; */
 }
 
 /* Раскрывающийся список */
@@ -1168,8 +1142,13 @@ body {
 }
 
 
-.company-content .button {
-  padding: 0.5em 1.5em;
+.about-company .button {
+  padding: 0.5em 1.2em;
+  box-sizing: content-box;
+}
+
+.contacts .button {
+  padding: 0.5em 1.7em;
   box-sizing: content-box;
 }
 
