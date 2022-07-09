@@ -246,6 +246,13 @@ body {
   outline-offset: 2px;
 }
 
+.search-holder:focus {
+  outline: none;
+}
+
+.search-button:focus {
+  outline: none;
+}
 
 .navigation-user,
 .navigation-site-list,
@@ -268,6 +275,10 @@ body {
   display: grid;
   grid-template-columns: 360px 1fr;
   margin-bottom: 130px;
+}
+
+.page-header-catalog .navigation-site {
+  margin-bottom: 18px;
 }
 
 .navigation-user-link {
@@ -931,6 +942,11 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-button-style:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .advantages-item:first-child {
   margin-top: 64px;
 }
@@ -1318,6 +1334,18 @@ body {
   margin-bottom: 35px;
 }
 
+.footer-logo-link:focus .footer-logo {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  border: none;
+}
+
+.footer-logo-link:focus-visible {
+  outline: none;
+  border: none;
+}
+
+
 .about-text {
   position: relative;
   font-size: 16px;
@@ -1443,6 +1471,10 @@ body {
 .footer-social-item:focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
+}
+
+.button-social:focus {
+  outline: none;
 }
 
 .footer-tell-html-link {
@@ -1667,12 +1699,14 @@ body {
   font-size: 15px;
   background-color: transparent;
   border: none;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1774,7 +1808,8 @@ body {
   position: relative;
   border: none;
   cursor: pointer;
-  padding: 0.5em 2.5em;
+  background-color: transparent;
+  padding: 0.5em 2.6em;
   z-index: 2;
 }
 
@@ -1825,6 +1860,11 @@ body {
 .select-control-list {
   border: 0;
   background-color: #F0F0F0;
+}
+
+.select-control-list:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .select-arrow {
@@ -1919,9 +1959,17 @@ body {
   background-color: #FFC700;
 }
 
-.product-card-link:focus {
+.product-card:focus-within .product-card-cover {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
+}
+
+.product-card:focus-visible {
+  outline: none;
+}
+
+.product-card-link:focus-visible {
+  outline: none;
 }
 
 .product-name-price {
@@ -2020,7 +2068,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  padding: 25px;
+  padding: 25px 23px;
   cursor: pointer;
 }
 
@@ -2091,7 +2139,6 @@ body {
   position: relative;
   top: 20%;
   margin: auto;
-  padding: 40px;
   background-color: #ffffff;
   border: 10px solid #000000;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -2100,7 +2147,7 @@ body {
 .modal-auth {
   box-sizing: border-box;
   width: 920px;
-  padding: 60px 72px;
+  padding: 64px 70px;
 }
 
 .modal-close-button {
@@ -2124,10 +2171,11 @@ body {
   line-height: 50px;
   padding: 0;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .field-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -2139,7 +2187,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 36px;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .field-group-title {
@@ -2155,15 +2203,26 @@ body {
   height: 60px;
   background-color: #F0F0F0;
   border: none;
-  padding: 20px 10px;
+  padding: 20px 20px;
   font-size: 16px;
   line-height: 20px;
+}
+
+.modal-name-icon {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+}
+
+.modal-mail-icon {
+  position: absolute;
+  bottom: 46px;
+  right: 20px;
 }
 
 .mail-wrong {
   font-size: 14px;
   line-height: 20px;
-  color: #FF3D3D;
   margin: 0;
   padding: 0;
   padding-top: 2px;
@@ -2173,7 +2232,7 @@ body {
   display: grid;
   grid-template-columns: 540px 180px;
   gap: 38px;
-  margin-bottom: 42px;
+  margin-bottom: 44px;
 }
 
 .tultip-cover {
@@ -2219,8 +2278,36 @@ body {
 .auth-form-button {
   background-color: transparent;
   border: none;
-  padding: 0.5em 1.5em;
+  padding: 0.5em 1.6em;
   z-index: 3;
+  cursor: pointer;
+}
+
+.field:hover {
+  background-color: #DCDCDC;
+}
+
+.field:focus:invalid {
+  outline: 2px solid #FF3D3D;
+  outline-offset: 2px;
+  background-color: #F0F0F0;
+}
+
+.field:focus:invalid + .mail-wrong {
+  color: #FF3D3D;
+}
+
+.field:disabled {
+  opacity: 0.3;
+}
+
+.field-mail:focus:invalid {
+  border-bottom: 2px solid #FF3D3D;
+  outline: none;
+}
+
+.modal-buttons:focus {
+  z-index: 2;
 }
 
 /* Тултип */
@@ -2236,15 +2323,16 @@ body {
   padding: 0;
   margin: 0;
   display: block;
+  cursor: pointer;
 }
 
 .tooltip-icon {
   width: 26px;
   height: 26px;
   margin-left: 120px;
-  margin-bottom: 4px;
   color: #242424;
   display: block;
+  transform: translate(0, -2px);
 }
 
 .tooltip-text {
@@ -2264,7 +2352,7 @@ body {
   width: 14px;
   height: 6px;
   position: absolute;
-  top: 24px;
+  top: 22px;
   left: -3px;
   right: 0;
   margin-left: 130px;
@@ -2273,4 +2361,9 @@ body {
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
+}
+
+.tooltip-toggle:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
