@@ -317,11 +317,12 @@ body {
 
 .log-out {
   opacity: 0.3;
-  margin-left: auto;
+  margin-left: 10px;
 }
 
 .name {
   padding-left: 26px;
+  margin-right: auto;
 }
 
 .name-latters {
@@ -770,6 +771,7 @@ body {
 
 .specifications-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
 }
 
@@ -931,17 +933,6 @@ body {
   margin-bottom: 37px;
 }
 
-.advantages-button-style {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  text-decoration: none;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
 .advantages-button-style:focus {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
@@ -956,12 +947,20 @@ body {
 }
 
 .advantages-button-current {
+  font-family: 'Raleway', sans-serif;
   position: relative;
   color: #FFE17F;
   cursor: pointer;
   background: transparent;
   border: none;
   padding: 0.5em 1em;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .advantages-button-current::after {
@@ -1105,6 +1104,7 @@ body {
 
 .button-delivery {
   display: inline-block;
+  width: 900px;
   margin-top: 4px;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -1294,6 +1294,16 @@ body {
 .newsletter-button:focus {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
+}
+
+.newsletter-button:hover {
+  background-color: #000000;
+  color: #F0F0F0;
+  border: 3px solid #000000;
+}
+
+.newsletter-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .it-for-free-cover {
@@ -1547,6 +1557,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1947,6 +1958,21 @@ body {
   z-index: -1;
 }
 
+.product-card {
+  position: relative;
+}
+
+.product-new {
+  position: absolute;
+  background-image: url(/images/catalog/new-product.png);
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  z-index: 3;
+  margin-top: 27px;
+  margin-left: 273px;
+}
+
 .product-card-link:hover > .button-products {
   display: flex;
 }
@@ -2052,6 +2078,7 @@ body {
 
 .pagination-number-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
