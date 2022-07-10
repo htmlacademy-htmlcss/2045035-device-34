@@ -355,7 +355,7 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  left: -17px;
+  left: -15px;
   top: 14px;
   font-size: 14px;
   line-height: 17px;
@@ -665,8 +665,12 @@ body {
 }
 
 .slider {
-  display: flex;
+  display: none;
   position: relative;
+}
+
+.active {
+  display: flex;
 }
 
 .slider-left {
@@ -793,15 +797,6 @@ body {
   line-height: 30px;
 }
 
-.slider-three {
-  display: none;
-}
-
-.slider-two {
-  display: none;
-}
-
-
 /* Категории товаров */
 
 .product-categories-list {
@@ -901,9 +896,13 @@ body {
 }
 
 .advantages-content {
-  display: grid;
+  display: none;
   grid-template-columns: 280px 600px 1fr;
   margin-bottom: 144px;
+}
+
+.advantages-active {
+  display: grid;
 }
 
 .advantages-list {
@@ -1011,14 +1010,6 @@ body {
 .advantages-img {
   margin: auto;
   margin-right: 63px;
-}
-
-.advantages-content-three {
-  display: none;
-}
-
-.advantages-content-two {
-  display: none;
 }
 
 /* Доставка под заказ */
@@ -1251,6 +1242,7 @@ body {
 
 .mail-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -1258,6 +1250,7 @@ body {
   display: flex;
   width: 810px;
   height: 57px;
+  margin-right: 20px;
 }
 
 .field {
@@ -1310,6 +1303,7 @@ body {
   position: relative;
   margin: auto 0;
   margin-right: 2px;
+  margin-left: auto;
 }
 
 .it-for-free {
@@ -1680,12 +1674,12 @@ body {
 
 .toggle-min {
   top: -8px;
-  left: -10px;
+  left: -17px;
 }
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -18px;
 }
 
 .range-wrapper-inputs {
@@ -1711,13 +1705,13 @@ body {
   background-color: transparent;
   border: none;
   -webkit-appearance: textfield;
-          appearance: textfield;
+  appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -2231,6 +2225,7 @@ body {
   background-color: #F0F0F0;
   border: none;
   padding: 20px 20px;
+  padding-right: 50px;
   font-size: 16px;
   line-height: 20px;
 }
