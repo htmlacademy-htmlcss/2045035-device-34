@@ -1964,7 +1964,7 @@ body {
 
 .product-new {
   position: absolute;
-  background-image: url(/images/catalog/new-product.png);
+  background-image: url(../images/catalog/new-product.png);
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
