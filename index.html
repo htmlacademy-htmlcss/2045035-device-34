@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -53,7 +54,7 @@
             </li>
             <li class="navigation-user-item navigation-user-item-basket">
               <a class="navigation-user-link basket buttons-status" href="#">
-                <span class="basket-number"></span>
+                <span class="basket-number">2</span>
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="15"
                   viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -105,7 +106,7 @@
         <!-- Навигация по сайту -->
         <div class="navigation-site">
           <div class="navigation-catalog">
-            <button class="navigation-catalog-button">
+            <button  type="button" class="navigation-catalog-button">
               <span class="navigation-site-link">Каталог товаров</span>
               <span class="navigation-catalog-icon"></span>
             </button>
@@ -159,7 +160,7 @@
       <section class="top-item wrapper">
         <h2 class="visually-hidden">Лучшие предложения</h2>
         <!-- Квадракоптер -->
-        <div class="slider slider-one">
+        <div class="slider slider-one active">
           <p class="slider-number">01</p>
           <div class="slider-left">
             <img class="slider-image" src="images/quadcopter_big.png" width="560" height="560"
@@ -212,7 +213,7 @@
           </div>
         </div>
         <!-- Умные часы -->
-        <div class="slider slider-two">
+        <div class="slider slider-two ">
           <p class="slider-number">02</p>
           <div class="slider-left">
             <img class="slider-image" src="images/fitness-bracelet-big.png" width="560" height="560"
@@ -260,7 +261,7 @@
           </div>
         </div>
         <!-- Сэлфи палка -->
-        <div class="slider slider-three">
+        <div class="slider slider-three ">
           <p class="slider-number">03</p>
           <div class="slider-left">
             <img class="slider-image" src="images/selfie-stick-big.png" width="560" height="560" alt="Сэлфи палка.">
@@ -363,16 +364,16 @@
       <!-- Доставка, гарантия, кредит -->
       <h2 class="visually-hidden wrapper">Преимущества</h2>
       <section class="advantages">
-        <div class="advantages-content wrapper advantages-content-one">
+        <div class="advantages-content wrapper advantages-active">
           <ul class="advantages-list">
             <li class="advantages-item">
-              <button class="advantages-button-style advantages-button-current" type="button">Доставка</button>
+              <button class="advantages-button-current" type="button">Доставка</button>
             </li>
             <li class="advantages-item">
-              <button class="advantages-button-style advantages-button" type="button">Гарантия</button>
+              <button class="button advantages-button" type="button">Гарантия</button>
             </li>
             <li class="advantages-item">
-              <button class="advantages-button-style advantages-button" type="button">Кредит</button>
+              <button class="button advantages-button" type="button">Кредит</button>
             </li>
           </ul>
           <div class="advantages-description">
@@ -383,16 +384,16 @@
           </div>
           <img class="advantages-img" src="images/icons_main/delivery_men.svg" width="136" height="164" alt="">
         </div>
-        <div class="advantages-content wrapper advantages-content-two">
+        <div class="advantages-content wrapper ">
           <ul class="advantages-list">
             <li class="advantages-item">
-              <button class="advantages-button-style advantages-button" type="button">Доставка</button>
+              <button class="button advantages-button" type="button">Доставка</button>
             </li>
             <li class="advantages-item">
-              <button class="advantages-button-style advantages-button-current" type="button">Гарантия</button>
+              <button class="advantages-button-current" type="button">Гарантия</button>
             </li>
             <li class="advantages-item">
-              <button class="advantages-button-style advantages-button" type="button">Кредит</button>
+              <button class="button advantages-button" type="button">Кредит</button>
             </li>
           </ul>
           <div class="advantages-description">
@@ -403,16 +404,16 @@
           </div>
           <img class="advantages-img" src="images/icons_main/warranty.svg" width="136" height="164" alt="">
         </div>
-        <div class="advantages-content wrapper advantages-content-three">
+        <div class="advantages-content wrapper ">
           <ul class="advantages-list">
             <li class="advantages-item">
-              <button class="advantages-button-style advantages-button" type="button">Доставка</button>
+              <button class="button advantages-button" type="button">Доставка</button>
             </li>
             <li class="advantages-item">
-              <button class="advantages-button-style advantages-button" type="button">Гарантия</button>
+              <button class="button advantages-button" type="button">Гарантия</button>
             </li>
             <li class="advantages-item">
-              <button class="advantages-button-style advantages-button-current" type="button">Кредит</button>
+              <button class="advantages-button-current" type="button">Кредит</button>
             </li>
           </ul>
           <div class="advantages-description">
@@ -427,7 +428,7 @@
       <!-- Доставка под заказ -->
       <section class="wrapper">
         <h2 class="visually-hidden wrapper">Доставка под заказ</h2>
-        <button class="delivery-under-the-order">
+        <button class="delivery-under-the-order" type="button">
           <svg class="delivery-under-img" aria-hidden="true" focusable="false" width="47" height="31"
             viewBox="0 0 47 31" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -483,7 +484,7 @@
           </div>
           <div class="mail-content">
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+              <input class="field field-mail" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
                 required>
               <button class="newsletter-button" type="submit">Подписаться</button>
             </form>
@@ -582,7 +583,7 @@
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
         </section>
-        <button class="modal-close-button buttons-status">
+        <button class="modal-close-button buttons-status" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -591,11 +592,17 @@
               <label for="auth-name" class="field-group-title">Ваше имя:</label>
               <input class="auth-form-field field" type="text" id="auth-name" name="auth-name"
                 placeholder="Введите имя">
+              <svg class="modal-name-icon" aria-hidden="true" focusable="false" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z"
+                  fill="#B3B3B3" />
+              </svg>
             </div>
             <div class="field-group">
               <label for="auth-mail" class="field-group-title">Ваш e-mail:</label>
               <input class="auth-form-field field" type="email" id="auth-mail" name="auth-mail" placeholder="почта">
               <span class="mail-wrong">Забавный у вас адрес</span>
+              <svg class="modal-mail-icon" aria-hidden="true" focusable="false" width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.6 8c-.4 0-.6-.1-1-.3L0 4v7c0 .6.4 1 .9 1h13.2c.6 0 .9-.4.9-1V4L8.5 7.7c-.4.2-.6.3-.9.3Zm6.5-8H.9C.4 0 0 .5 0 1v.8L7.5 6 15 1.8V1c0-.5-.4-1-.9-1Z" fill="#B3B3B3"/></svg>
             </div>
           </div>
           <div class="product-plas-count">
@@ -620,10 +627,10 @@
                 </span>
               </div>
               <div class="count-contant">
-                <button class="button-count buttons-status"></button>
-                <input class="auth-form-field auth-form-number field" type="text" id="auth-count" name="auth-count"
-                  placeholder="1">
-                <button class="button-count button-plus buttons-status"></button>
+                <button class="button-count buttons-status modal-buttons" type="button"></button>
+                <input class="auth-form-field auth-form-number field modal-buttons" type="text" id="auth-count"
+                  name="auth-count" placeholder="1">
+                <button class="button-count button-plus buttons-status modal-buttons" type="button"></button>
               </div>
             </div>
           </div>
