@@ -1300,6 +1300,7 @@ body {
 }
 
 .it-for-free-cover {
+  max-width: 280px;
   position: relative;
   margin: auto 0;
   margin-right: 2px;
