@@ -153,6 +153,7 @@ body {
 }
 
 .navigation-logo {
+  width: 150px;
   display: flex;
   margin: 0;
   padding: 0;
@@ -447,7 +448,7 @@ body {
   background-color: transparent;
   width: 10px;
   height: 20px;
-  background-image: url(../images/icons_header/close-icon.svg);
+  background-image: url(../images/icons_header/close_icon.svg);
   background-repeat: no-repeat;
   margin-left: auto;
   border: none;
@@ -1417,8 +1418,9 @@ body {
 }
 
 
-.footer-navigation-item:not(:last-child) {
-  margin-right: 31px;
+.footer-navigation-item{
+  margin-right: 16px;
+  margin-left: 16px;
 }
 
 .footer-social-list {
@@ -1757,7 +1759,7 @@ body {
   border-radius: 3px;
 }
 
-.control:hover .control-mark {
+.control:hover {
   opacity: 0.5;
 }
 
@@ -1768,6 +1770,11 @@ body {
 .control-input:focus + .control-mark {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
+}
+
+.control-input[type="checkbox"]:disabled ~ .control-mark,
+.control-input[type="checkbox"]:disabled ~ .control-label {
+  opacity: 0.1;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
@@ -1953,13 +1960,17 @@ body {
   z-index: -1;
 }
 
+.button-products:hover:after {
+  height: 40px;
+}
+
 .product-card {
   position: relative;
 }
 
 .product-new {
   position: absolute;
-  background-image: url(../images/catalog/new-product.png);
+  background-image: url(../images/catalog/new_product.png);
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
@@ -2180,7 +2191,7 @@ body {
   height: 26px;
   background-color: #ffffff;
   border: none;
-  background-image: url("../images/close-icon.svg");
+  background-image: url("../images/close_icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -2274,6 +2285,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  padding: 0;
 }
 
 .button-count {
