@@ -153,6 +153,7 @@ body {
 }
 
 .navigation-logo {
+  width: 150px;
   display: flex;
   margin: 0;
   padding: 0;
@@ -1771,7 +1772,8 @@ body {
   outline-offset: 2px;
 }
 
-.control-input:disabled + .control-mark {
+.control-input[type="checkbox"]:disabled ~ .control-mark,
+.control-input[type="checkbox"]:disabled ~ .control-label {
   opacity: 0.1;
 }
 
@@ -1956,6 +1958,10 @@ body {
   height: 8px;
   background-color: #FFE17F;
   z-index: -1;
+}
+
+.button-products:hover:after {
+  height: 40px;
 }
 
 .product-card {
